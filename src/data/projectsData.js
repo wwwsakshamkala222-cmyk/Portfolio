@@ -1,0 +1,32 @@
+export const projectsData = [
+  {
+    id: 1,
+    image: '/cultivai.jpg',
+    title: 'Cultivai - AI Agricultural Platform',
+    description: 'A comprehensive AI-powered agricultural platform designed to help farmers make data-driven decisions for crop management and sustainable farming practices.',
+    skills: ['React', 'AWS', 'AI/ML', 'Vercel-Render'],
+    github: 'https://github.com/wwwsakshamkala222-cmyk/Cultivai-final-deployment-part2',
+    demo: 'https://cultivai-final-deployment-part2-eoi.vercel.app/',
+    comingSoon: false,
+  },
+  {
+    id: 2,
+    image: 'https://via.placeholder.com/400x200/667eea/ffffff?text=Resume+Analyser',
+    title: 'Resume Analyser',
+    description: 'AI-powered resume analysis tool that provides insights, suggestions, and ATS compatibility scores to help job seekers optimize their resumes.',
+    skills: ['Python', 'NLP', 'Machine Learning', 'React'],
+    github: '#',
+    demo: '#',
+    comingSoon: true,
+  },
+  {
+    id: 3,
+    image: 'https://via.placeholder.com/400x200/764ba2/ffffff?text=Cloud+Edge+Platform',
+    title: 'Cloud Edge Collaboration',
+    description: 'Distributed cloud-edge computing platform for real-time collaboration and resource optimization across edge devices and cloud infrastructure.',
+    skills: ['AWS', 'Docker', 'Kubernetes', 'Edge Computing'],
+    github: '#',
+    demo: '#',
+    comingSoon: true,
+  },
+];

@@ -1,0 +1,172 @@
+.about {
+  margin: 160px 200px;
+}
+
+.about > p {
+  padding-bottom: 30px;
+  font-size: 13px;
+  color: rgb(50, 50, 50);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.about h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+.about .hrrr {
+  width: 30%;
+  padding-bottom: 40px;
+}
+
+.about .hrrr hr {
+  border: none;
+  height: 2px;
+  background-color: #474af0;
+}
+
+.info-about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.about-info {
+  margin-bottom: 30px;
+}
+
+.about-info p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.about img {
+  position: relative;
+  bottom: 85px;
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+  border: 2px solid #474af0;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.about img:hover {
+  transform: scale(1.05);
+}
+
+.about h2 {
+  padding-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.card {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.c1 {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 200px;
+  background-color: white;
+}
+
+.c1 h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.c1 p {
+  color: #666;
+  font-size: 14px;
+}
+
+.c1:hover {
+  transform: translateY(-6px) scale(1.03);
+  border-color: #474af0;
+  background-color: #f8f9ff;
+  box-shadow: 0 4px 15px rgba(71, 74, 240, 0.2);
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about {
+    margin: 120px 50px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .about img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    bottom: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin: 100px 20px;
+    text-align: center;
+  }
+
+  .about h1 {
+    font-size: 32px;
+  }
+
+  .about .hrrr {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .c1 {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .about img {
+    max-width: 280px;
+  }
+}
