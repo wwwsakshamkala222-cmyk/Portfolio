@@ -37,11 +37,9 @@ const Hero = () => {
             <h3>
               <TypeAnimation
                 sequence={[
-                  'Cloud Developer',
+                  'Cloud Security Engineer',
                   2000,
                   'React Developer',
-                  2000,
-                  'Backend Developer',
                   2000,
                   'Software Manager',
                   2000,
@@ -54,7 +52,7 @@ const Hero = () => {
               />
             </h3>
             <div className="info-p">
-              <p>Cloud architecture and web development enthusiast who learns by building.</p>
+              <p>Cloud architecture and security enthusiast who learns by building.</p>
               <p>Open to opportunities to collaborate and grow.</p>
             </div>
             <div className="info-p2">
@@ -107,7 +105,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <img src="/images/img2.jpg" alt="Saksham Kala" />
+        <img src="/saksham.jpg" alt="Saksham Kala" />
       </div>
     </section>
   );

@@ -53,22 +53,6 @@
   font-size: 16px;
 }
 
-.about img {
-  position: relative;
-  bottom: 85px;
-  width: 400px;
-  height: 400px;
-  border-radius: 15px;
-  border: 2px solid #474af0;
-  object-fit: cover;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
-}
-
-.about img:hover {
-  transform: scale(1.05);
-}
-
 .about h2 {
   padding-bottom: 30px;
   font-size: 28px;

@@ -52,7 +52,6 @@ const About = () => {
             ))}
           </div>
         </div>
-        <img src="/saksham.jpg" alt="About Saksham kala" />
       </div>
     </section>
   );

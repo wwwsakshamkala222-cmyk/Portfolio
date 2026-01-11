@@ -8,7 +8,7 @@ const Navigation = () => {
   const navItems = [
     { id: 'home', icon: 'fa-house', label: 'Home' },
     { id: 'about', icon: 'fa-address-card', label: 'About' },
-    { id: 'project', icon: 'fa-folder-open', label: 'Projects' },
+    { id: 'projects', icon: 'fa-folder-open', label: 'Projects' },
     { id: 'services', icon: 'fa-code', label: 'Services' },
     { id: 'contact', icon: 'fa-envelope', label: 'Contact' },
   ];
