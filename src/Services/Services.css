@@ -103,3 +103,22 @@
     gap: 20px;
   }
 }
+
+@media (max-width: 480px) {
+  .services {
+    margin: 80px 12px;
+  }
+
+  .services h1 { font-size: 28px; }
+
+  .services-container { gap: 16px; }
+
+  .service-card {
+    padding: 18px;
+  }
+
+  .service-card img {
+    width: 80px;
+    height: 80px;
+  }
+}

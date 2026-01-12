@@ -239,3 +239,20 @@
   cursor: not-allowed;
 }
 }
+
+@media (max-width: 480px) {
+  .contact {
+    margin: 80px 12px;
+  }
+
+  .contact h1 { font-size: 28px; }
+
+  .contact-info > p { font-size: 14px; }
+
+  .contact-content { gap: 20px; }
+
+  .contact-form input,
+  .contact-form textarea { font-size: 14px; padding: 10px 12px; }
+
+  .btn-send { width: 100%; padding: 12px; }
+}

@@ -84,3 +84,15 @@
     font-size: 24px;
   }
 }
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 24px 12px;
+  }
+
+  .footer-logo { font-size: 20px; }
+
+  .footer-social a { width: 36px; height: 36px; font-size: 16px; }
+
+  .footer-links { gap: 10px; }
+}

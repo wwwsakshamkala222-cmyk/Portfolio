@@ -61,15 +61,121 @@ header {
 
 /* Responsive */
 @media (max-width: 1024px) {
+  /* Keep nav visible on tablets / phones as a compact floating bar */
   header {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    z-index: 1100;
+    display: block;
+  }
+
+  .div-list {
+    padding: 0;
+  }
+
+  .ul-list {
+    gap: 0.6rem;
+    padding: 8px 12px;
+    border-radius: 999px;
+    align-items: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  }
+
+  .ul-list li {
+    gap: 6px;
+    padding: 8px 10px;
+  }
+
+  /* Show compact icon-only items on small screens for space */
+  .ul-list li a {
     display: none;
+  }
+
+  .ul-list li i {
+    font-size: 1.1rem;
+    color: inherit;
   }
 }
 
-@media (max-width: 768px) {
-  .ul-list {
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 8px 15px;
+@media (max-width: 480px) {
+  header {
+    bottom: 12px;
   }
+
+  .ul-list {
+    padding: 6px 10px;
+    gap: 0.5rem;
+  }
+  .ul-list li i { font-size: 1rem; }
 }
+
+/* Hamburger + mobile overlay for very small screens */
+@media (max-width: 420px) {
+  .nav-toggle { display: block; }
+
+  header {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    transform: none;
+    width: auto;
+    z-index: 1200;
+  }
+
+  .div-list { display:flex; align-items:center; gap:8px; }
+
+  .nav-toggle {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    cursor: pointer;
+  }
+
+  .nav-toggle .bar {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #111;
+    margin: 2px 0;
+  }
+
+  .ul-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 60px 20px 20px 20px;
+    border-radius: 0;
+    background: rgba(255,255,255,0.98);
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    justify-content: flex-start;
+    transform: translateY(-8px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 180ms ease, visibility 180ms ease, transform 180ms ease;
+  }
+
+  .ul-list.mobile-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .ul-list li a { display: inline-block; }
+}
+
+/* hide mobile toggle by default */
+.nav-toggle { display: none; }

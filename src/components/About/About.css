@@ -154,3 +154,23 @@
     max-width: 280px;
   }
 }
+
+@media (max-width: 480px) {
+  .about {
+    margin: 80px 12px;
+  }
+
+  .about h1 {
+    font-size: 28px;
+  }
+
+  .about-info p {
+    font-size: 14px;
+  }
+
+  .about .hrrr {
+    width: 70%;
+  }
+
+  .card { gap: 1rem; }
+}

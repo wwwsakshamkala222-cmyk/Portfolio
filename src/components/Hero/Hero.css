@@ -316,3 +316,37 @@
   }
 }
 }
+
+@media (max-width: 480px) {
+  .home {
+    margin: 80px 12px;
+  }
+
+  .home-container {
+    gap: 1.5rem;
+  }
+
+  .info-home h1 {
+    font-size: 28px;
+  }
+
+  .info-home h3 {
+    font-size: 20px;
+    min-height: 28px;
+  }
+
+  .info-p {
+    font-size: 14px;
+  }
+
+  .home img {
+    width: 100%;
+    height: clamp(180px, 28vh, 320px);
+  }
+
+  .btnn { gap: 0.6rem; }
+
+  .follow ul {
+    gap: 0.8rem;
+  }
+}
