@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     id: 1,
-    image: '/cultivai.jpg',
+    image: '/cultivAI.jpg',
     title: 'Cultivai - AI Agricultural Platform',
     description: 'A comprehensive AI-powered agricultural platform designed to help farmers make data-driven decisions for crop management and sustainable farming practices.',
     skills: ['React', 'AWS', 'AI/ML', 'Vercel-Render'],
