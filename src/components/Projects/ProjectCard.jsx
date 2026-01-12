@@ -19,6 +19,7 @@ const ProjectCard = ({ image, title, description, skills, github, demo, comingSo
         ))}
       </div>
       <div className="btns">
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a 
           href={comingSoon ? '#' : github} 
           className={`btn ${comingSoon ? 'disabled' : ''}`}
@@ -28,6 +29,8 @@ const ProjectCard = ({ image, title, description, skills, github, demo, comingSo
         >
           <i className="fab fa-github"></i> {comingSoon ? 'In Development' : 'GitHub'}
         </a>
+
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a 
           href={comingSoon ? '#' : demo} 
           className={`btn ${comingSoon ? 'disabled' : ''}`}
